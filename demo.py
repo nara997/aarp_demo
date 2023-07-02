@@ -40,7 +40,7 @@ def main_function(lyrics):
         for i, sublist in enumerate(list_of_lists):
             noun_count = count_nouns(sublist)
             replaced_sentence = ''
-            if noun_count >= 1:
+            if noun_count >= 2:
                 sentence_from_lyrics_which_has_more_nouns = paragraphs[i]
                 non_replaced_sentences.append(sentence_from_lyrics_which_has_more_nouns)
                 for word, pos in sublist:
